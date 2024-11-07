@@ -40,7 +40,7 @@ body {
     margin: 10% auto;
 }
 
-#backBtn #frontBtn{
+#backBtn, #nextBtn{
     width: 50px;
     cursor: pointer;
     margin: 40px;

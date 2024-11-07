@@ -1,14 +1,15 @@
 
 let backBtn = document.getElementById('backBtn');
-let frontBtn = document.getElementById('frontBtn');
+let nextBtn = document.getElementById('nextBtn');
 let scrollContainer = document.querySelector('.container');
 
 scrollContainer.addEventListener('wheel', (e) => {
     e.preventDefault();
     scrollContainer.scrollLeft += e.deltaY;
+    scrollContainer.style.scrollBehavior = 'auto';
 });
 
-frontBtn.addEventListener('click', () => {
+nextBtn.addEventListener('click', () => {
     scrollContainer.style.scrollBehavior = 'smooth';
     scrollContainer.scrollLeft += 900;
 })
